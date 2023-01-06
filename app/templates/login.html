@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main_page.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="styles.fd4623c99fb6551abecb.css">
+    <script src="https://kit.fontawesome.com/c6e650f495.js" crossorigin="anonymous"></script>
+    <title>Homebank</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="header">
+                <div class="nav nav-left" >
+                    <h1>h<span id="dif-o">o</span>mebank</h1>
+                </div>
+                <div class="nav nav-right">
+                    <ul>
+                        <li class="login"><a>Вход</a></li>
+                        <li>
+                            <a class="lang">Ру  <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown_lang">
+                                <ul>
+                                    <li><a href="">Ру</a></li>
+                                    <li><a href="">En</a></li>
+                                    <li><a href="">Ққ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <div class="log-main-top">
+                <h1>Вход в homebank</h1>
+                <div>Выберите удобный способ авторизации</div>
+            </div>
+            <div class="log-main-btm">
+                <div class="log-main-btm-left btn-log">
+                    <div class="labels">
+                        <label>Доворенный номер телефона</label>
+                        <label>Идентификатор Homebank</label>
+                        <label>Логин myHalyk</label>
+                    </div>
+                    <div class="nomer">
+                        <label>Ведите логин</label>
+                        <input placeholder="Ведите логин" name="login" id="1" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div  class="nomer">
+                        <label>Пароль</label>
+                        <input type="password" placeholder="Введите пароль" name="password" id="2">
+                        <div class="error"></div>
+                    </div>
+                    
+           <a href="main_page.html"> <button id="log" onclick="click()" >Войти</button></a>
+                    
+                    <div class="forgot-pass">
+                       <p id="3"></p>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Нет аккаунта в homebank?</a>
+                    </div>
+                    
+                </div>
+                <div class="log-main-btm-right btn-log">
+                    <div>
+                        <section>
+                            <h2>Пользователям старого Homebank и myHalyk</h2>
+                            <div>Инструкция по входу</div>
+                        </section>
+                        <img src="https://cdn.homebank.kz/assets/svg/art.svg">
+                    </div>
+                    <button>Как войти?</button>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="homebank-on-phone">
+                    <h4 >Homebank в вашем смарфоне</h4>
+                    <img src="https://cdn.homebank.kz/assets/icons/others/google-play.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/app-store.svg">
+                </div>
+                <div class="call-center">
+                    <h4>Контакст-центр</h4>
+                    <h2>7111</h2>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <h4>Условия</h4>
+                <a href="#">Договор использования услуг Homebank</a>
+                <a href="#">Безопастность</a>
+            </div>
+            <div class="footer-btm">
+                <div class="footer-img-inf">
+                    <img src="https://cdn.homebank.kz/assets/svg/halykbank-logo.svg" width="200px">
+                    <p>Лицензия на проведение банковских и иных операций и деятельности
+                         на рынке ценных бумаг № 1.2.47/230/38/1 от 3 февраля 2020 года<br>
+                        © 2000 — 2022 АО «Народный Банк Казахстана»
+                    </p>
+                </div>
+                <div class="link-icons">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/facebook.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/vk.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/twitter.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/instagram.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/youtube.svg">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+let log_btn = document.getElementById('log'); 
+    log_btn.addEventListener('click', function(){
+        let log = document.getElementById("1").value;
+ let pass = document.getElementById("2").value;
+ if(log=="1" && pass==123){
+    alert("Добро пожаловать")
+ }else{
+    alert("Неправльный логин или пароль")
+ }
+    })
+
+</script>
+</html>

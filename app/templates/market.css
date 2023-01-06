@@ -1,0 +1,134 @@
+.market-main{
+    width: 90%;
+    margin: 0 auto;
+}
+.market-main-tool-bar{
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+.market-main-tool-bar label{
+    width: 60%;
+    height: 40px;
+    border: 2px solid rgb(66, 223, 66);
+    border-radius: 5px;
+}
+.market-main-tool-bar input{
+    width: 90%;
+    height: 30px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    border: none;
+}
+.market-main-tool-bar button{
+    padding: 5px 5px;
+    font-size: 14px;
+    border: none;
+    color: green;
+}
+.market-main-tool-bar button:hover {
+    background-color: rgb(178, 220, 180);
+}
+.market-main-tool-bar .izbrannoe{
+    cursor: pointer;
+    display: grid;
+    text-align: center;
+    font-size: 12px;
+}
+.market-main-tool-bar .izbrannoe i{
+    font-size: 28px;
+}
+.market-main-nav-bar ul{
+    font-family: "Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",arial,sans-serif,"Apple Color Emoji";
+    width: 90%;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.market-main-nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.market-main-nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+.market-main-nav-bar .category-nav{
+    background-color: green;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.market-main-nav-bar .fa-sharp{
+    color: white;
+    margin-right: 5px;
+}
+.aksia{
+    margin-top: 50px;
+}
+.market-main-category{
+    width: 100%;
+    overflow: hidden;
+}
+.market-main-category .category-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.market-main-category .category-list a{
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: black;
+}
+
+/* телефоны и гаджеты */
+
+.telefons .title{
+    margin: 50px;
+}
+
+.telefons .title h4{
+    color: rgb(108, 102, 102);
+    margin: 10px 15px;
+}
+.telefons-list{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.telefons-list .items{
+    width: 380px;
+}
+.ras-izb{
+    display: flex;
+    justify-content: space-between;
+}
+.ras-izb button{
+    font-size: 20px;
+    padding: 3px;
+    color: green;
+    border: green;
+}
+.ras-izb span{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+}
+.price{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.price button{
+    padding: 5px 30px;
+    color: green;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+.price button:hover{
+    background-color: aquamarine;
+}

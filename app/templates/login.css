@@ -1,0 +1,94 @@
+.login{
+    border: 2px solid white;
+    padding: 10px 20px;
+    top: -10px;
+}
+.main{
+    width: 90%;
+    display: grid;
+    margin: 50px auto;
+}
+.log-main-top{
+    margin: 50px 0;
+    color: #03034B;
+    box-sizing: border-box;
+}
+.log-main-top h1{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.log-main-top div{
+    font-weight: 100;
+}
+.log-main-btm-left label{
+    border: none;
+}
+.log-main-btm{
+    display: flex;
+    color: #7D8193;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.labels label{
+    margin: 0 20px;
+}
+.nomer{
+    margin: 30px 0;
+    display: grid;
+}
+.nomer input{
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #03034B;
+    border: none;
+}
+.btn-log button{
+    background-color: #00A9FF;
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+}
+.forgot-pass{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.forgot-pass a{
+    text-decoration: none;
+    color: #00A9FF;
+    font-size: 16px;
+}
+.log-main-btm-right{
+    width: 40%;
+    height: 300px;
+    background-color: #11d392;
+    color: white;
+}
+
+.log-main-btm-right div{
+    display: flex;
+}
+
+.log-main-btm-right div section{
+    margin: 30px;
+    line-height: 30px;
+}
+
+.log-main-btm-right img{
+    margin: 30px;
+}
+
+.log-main-btm-right button{
+    margin-top: 30px;
+    width: 90%;
+    margin-left:20px;
+    color: #00A9FF;
+    background-color: white;
+}
+.log-main-btm-right button:hover{
+    background-color: #11d392;
+    color: white;
+}

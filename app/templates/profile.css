@@ -1,0 +1,39 @@
+.pro-main{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+}
+.pro-main-left{
+    width: 50%;
+    font-size: 20px;
+}
+#photo-img{
+    border-radius: 50%;
+}
+.pro-main-left .div{
+    display: flex;
+}
+.pro-main button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.pro-main input{
+    border: 2px solid seagreen;
+    border-radius: 5px;
+    height: 25px;
+}
+.pro-main-right{
+    width: 50%;
+}
+.pro-main-right fieldset{
+    width: 60%;
+    border: none;
+    margin: 20px 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pro-main-right img{
+    margin-top: 50px;
+    border-radius: 20px;
+}

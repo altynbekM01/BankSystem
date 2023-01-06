@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main_page.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" href="styles.fd4623c99fb6551abecb.css">
+    <script src="https://kit.fontawesome.com/c6e650f495.js" crossorigin="anonymous"></script>
+    <title>Homebank</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="header">
+                <div class="nav nav-left" >
+                    <h1>h<span id="dif-o">o</span>mebank</h1>
+                    <ul id="nav-left">
+                        <li><a  href="#">Главная</a></li>
+                        <li><a href="payments.html">Платежи</a></li>
+                        <li><a href="transfer.html">Переводы</a></li>
+                        <li><a href="market.html">Продукты</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+                <div class="nav nav-right">
+                   <a href="profile.html" class=" active"> <h1>Профиль</h1></a>
+                    <ul>
+                        <li><a><i class="fa-solid fa-bell"></i></a></li>
+                        <li><a><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
+                        <li>
+                            <a class="lang">Ру  <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown_lang">
+                                <ul>
+                                    <li><a href="">Ру</a></li>
+                                    <li><a href="">En</a></li>
+                                    <li><a href="">Ққ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+       <div class="pro-main">
+            <div class="pro-main-left">
+                <img id="photo-img" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png" width="400px" height="400px">
+                <div class="div">
+                    <input id="photo_input" placeholder="Enter a url of new photo" style="display: none;">
+                    <button id="photo_change">Изменить фото</button>
+                    <button id="photo_save" style="display: none;">Сохранить фото</button>
+                </div>
+            </div>
+            <div class="pro-main-right">
+                <h1>Добро пожаловать, <span id="dob-name"></span>!</h1>
+                <fieldset>
+                    <label>Имя: </label>
+                    <h2 id="name_show"></h2>
+                    <input id="name" type="text" style="display: none;">
+                    <button id="name_change">Изменить имя</button>
+                    <button id="name_save" style="display: none;">Сохранить имя</button>
+                </fieldset>
+                <fieldset>
+                    <label>Пароль: </label>
+                    <h2 id="nomer_show"></h2>
+                    <input id="phone_number" type="text" style="display: none;">
+                    <button id="nomer_change">Изменить пароль</button>
+                    <button id="nomer_save" style="display: none;">Сохранить пароль</button>
+                </fieldset>
+                <img src="https://pbs.twimg.com/media/EwCARDTXEAoWW2t.jpg:large" width="500px" height="400px">
+            </div>
+       </div>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="homebank-on-phone">
+                    <h4 >Homebank в вашем смарфоне</h4>
+                    <img src="https://cdn.homebank.kz/assets/icons/others/google-play.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/app-store.svg">
+                </div>
+                <div class="call-center">
+                    <h4>Контакст-центр</h4>
+                    <h2>7111</h2>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <h4>Условия</h4>
+                <a href="#">Договор использования услуг Homebank</a>
+                <a href="#">Безопастность</a>
+            </div>
+            <div class="footer-btm">
+                <div class="footer-img-inf">
+                    <img src="https://cdn.homebank.kz/assets/svg/halykbank-logo.svg" width="200px">
+                    <p>Лицензия на проведение банковских и иных операций и деятельности
+                         на рынке ценных бумаг № 1.2.47/230/38/1 от 3 февраля 2020 года<br>
+                        © 2000 — 2022 АО «Народный Банк Казахстана»
+                    </p>
+                </div>
+                <div class="link-icons">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/facebook.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/vk.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/twitter.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/instagram.svg">
+                    <img src="https://cdn.homebank.kz/assets/icons/others/youtube.svg">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+    let user = {
+        name: '1',
+    
+        password: '123',
+        photo: 'https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png',
+    }
+    
+    let hello = document.getElementById('dob-name');
+    hello.textContent = user.name
+    let name_h2 = document.getElementById('name_show');
+    let set_name = document.getElementById('name');
+    let btn_name_change = document.getElementById('name_change');
+    let btn_name_save = document.getElementById('name_save')
+    name_h2.textContent = user.name
+    btn_name_change.addEventListener('click', function(){
+        name_h2.style.display = 'none';
+        set_name.style.display = 'block';
+        btn_name_save.style.display = 'block';
+        btn_name_change.style.display = 'none';
+    })
+    btn_name_save.addEventListener('click', function(){
+        user.name = set_name.value;
+        name_h2.textContent = user.name;
+        hello.textContent = user.name
+        name_h2.style.display = 'block';
+        set_name.style.display = 'none';
+        btn_name_save.style.display = 'none';
+        btn_name_change.style.display = 'block';
+    })
+
+    let nomer_h2 = document.getElementById('nomer_show');
+    nomer_h2.textContent = user.phone_number;
+    let set_nomer = document.getElementById('phone_number');
+    let btn_nomer_change = document.getElementById('nomer_change');
+    let btn_nomer_save = document.getElementById('nomer_save');
+    
+
+    btn_nomer_change.addEventListener('click', function(){
+        nomer_h2.style.display = 'none';
+        set_nomer.style.display = 'block';
+        btn_nomer_save.style.display = 'block';
+        btn_nomer_change.style.display = 'none';
+    })
+    btn_nomer_save.addEventListener('click', function(){
+        user.phone_number = set_nomer.value;
+        nomer_h2.textContent = user.phone_number;
+        nomer_h2.style.display = 'block';
+        set_nomer.style.display = 'none';
+        btn_nomer_save.style.display = 'none';
+        btn_nomer_change.style.display = 'block';
+    })
+
+    let btn_photo_shange = document.getElementById('photo_change');
+    let btn_photo_save = document.getElementById('photo_save');
+    let set_photo = document.getElementById('photo_input');
+    let photo = document.getElementById('photo-img');
+
+    btn_photo_shange.addEventListener('click', function(){
+        set_photo.style.display = 'block';
+        btn_photo_shange.style.display = 'none';
+        btn_photo_save.style.display = 'block';
+    })
+    btn_photo_save.addEventListener('click', function(){
+        user.photo = set_photo.value;
+        photo.src = user.photo;
+        set_photo.style.display = 'none';
+        btn_photo_shange.style.display = 'block';
+        btn_photo_save.style.display = 'none';
+    })
+</script>
+</html>
